@@ -153,7 +153,7 @@ class Enclosure():
                 indexOffset = -1
             if m:
                 index = int(m.group(1)) + indexOffset
-                debug("Found index=" + index)
+                debug("Found index=%d" % index)
                 continue
 
             m = re.match(' *SAS address: (0x[0-9a-f]+)', l)
